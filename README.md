@@ -14,7 +14,7 @@
 ___
  ## Requisições de Porta:
 
- ### POST /porta
+ ### POST /v1/porta
 Cria um porta no sistema.
 
 **Request Body**
@@ -34,7 +34,7 @@ Cria um porta no sistema.
 }
 ```
 
- ### GET /porta/{id}
+ ### GET /v1/porta/{id}
 Exibe um porta do sistema
 
 **Response 200**
@@ -48,13 +48,13 @@ Exibe um porta do sistema
 
  ## Requisições de cliente:
 
- ### POST /cliente
+ ### POST /v1/cliente
 Cria um cliente no sistema.
 
 **Request Body**
 ```json
 {
-    "nome": "Nicollas Gabriel",
+    "nome": "Nicollas Gabriel"
 }
 ```
 
@@ -65,7 +65,7 @@ Cria um cliente no sistema.
     "nome": "Nicollas Gabriel",
 }
 ```
- ### GET /cliente/{id}
+ ### GET /v1/cliente/{id}
 Exibe um cliente do sistema.
 
 **Response 200**
@@ -77,7 +77,7 @@ Exibe um cliente do sistema.
 ```
  ## Requisições de acesso:
 
- ### POST /acesso
+ ### POST /v1/acesso
 Cria um acesso no sistema.
 
 **Request Body**
@@ -96,14 +96,14 @@ Cria um acesso no sistema.
 }
 ```
 
-### DELETE /acesso/{cliente_id}/{porta_id}
+### DELETE /v1/acesso/{cliente_id}/{porta_id}
 Apaga um acesso no sistema.
 
 **Response 204**
 ```json
 ```
 
-### GET /acesso/{cliente_id}/{porta_id}
+### GET /v1/acesso/{cliente_id}/{porta_id}
 Consulta um acesso no sistema.
 
 **Response 200**
