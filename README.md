@@ -83,16 +83,16 @@ Cria um acesso no sistema.
 **Request Body**
 ```json
 {
-    "porta_id": 1,
-    "cliente_id": 1
+    "portaId": 1,
+    "clienteId": 1
 }
 ```
 
 **Response 201**
 ```json
 {
-    "porta_id": 1,
-    "cliente_id": 1
+    "portaId": 1,
+    "clienteId": 1
 }
 ```
 
@@ -109,8 +109,8 @@ Consulta um acesso no sistema.
 **Response 200**
 ```json
 {
-    "porta_id": 1,
-    "cliente_id": 1
+    "portaId": 1,
+    "clienteId": 1
 }
 ```
 
