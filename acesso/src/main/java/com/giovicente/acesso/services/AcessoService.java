@@ -46,4 +46,16 @@ public class AcessoService {
         throw new RuntimeException("Acesso não encontrado.");
     }
 
+    public void deletarPorClienteIdEPortaId(long clienteId, long portaId) {
+
+        Cliente clienteObjeto = clienteClient.consultarClientePorId(clienteId);
+        Porta portaObjeto = portaClient.consultarPortaPorId(portaId);
+
+        Optional<Acesso> acessoOptional = acessoRepository.findByClienteIdAndPortaId(clienteId, portaId);
+
+        if (acessoOptional.isPresent()) {
+            acessoRepository.delete(acessoOptional.get());
+        }
+    }
+
 }
