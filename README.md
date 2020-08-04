@@ -15,7 +15,7 @@ ___
  ## Requisições de Porta:
 
  ### POST /v1/porta
-Cria um porta no sistema.
+Cria uma porta no sistema.
 
 **Request Body**
 ```json
@@ -35,7 +35,7 @@ Cria um porta no sistema.
 ```
 
  ### GET /v1/porta/{id}
-Exibe um porta do sistema
+Exibe uma porta do sistema
 
 **Response 200**
 ```json
